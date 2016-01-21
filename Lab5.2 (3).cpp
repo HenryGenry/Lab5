@@ -1,0 +1,24 @@
+// task3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int arr[10], count = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		cin >> arr[i];
+	}
+	for (int i = 0; i < 10; i++) {
+		if (arr[i] > 0) count++;
+	}
+	cout << count << endl;
+	system("pause");
+	return 0;
+}
+
